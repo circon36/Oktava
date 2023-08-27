@@ -22,6 +22,7 @@ struct ContentView: View {
                         }
                         .pickerStyle(.wheel)
                         .labelsHidden()
+                Spacer(minLength: 5)
                 Picker("", selection: $selectedHour) {
                     ForEach(definition, id: \.self) {
                             Text(String($0))
@@ -33,6 +34,7 @@ struct ContentView: View {
             HStack {
                 Text("125")
                     .multilineTextAlignment(.leading)
+                Spacer(minLength: 18)
                 Picker("", selection: $selectedHour) {
                     ForEach((0...100), id: \.self) {
                             Text(String($0))
@@ -40,7 +42,7 @@ struct ContentView: View {
                         }
                         .pickerStyle(.wheel)
                         .labelsHidden()
-                Spacer()
+                Spacer(minLength: 22)
                 Text("250")
                 Picker("", selection: $selectedHour) {
                     ForEach((0...100), id: \.self) {
@@ -53,6 +55,7 @@ struct ContentView: View {
             HStack {
                 Text("500")
                     .multilineTextAlignment(.leading)
+                Spacer(minLength: 15)
                 Picker("", selection: $selectedHour) {
                     ForEach((0...100), id: \.self) {
                             Text(String($0))
@@ -60,7 +63,7 @@ struct ContentView: View {
                         }
                         .pickerStyle(.wheel)
                         .labelsHidden()
-                Spacer()
+                Spacer(minLength: 15)
                 Text("1000")
                 Picker("", selection: $selectedHour) {
                     ForEach((0...100), id: \.self) {
@@ -80,7 +83,7 @@ struct ContentView: View {
                         }
                         .pickerStyle(.wheel)
                         .labelsHidden()
-                Spacer()
+                Spacer(minLength: 10)
                 Text("4000")
                 Picker("", selection: $selectedHour) {
                     ForEach((0...100), id: \.self) {
